@@ -1,0 +1,15 @@
+# values for kube-prometheus-stack (minimal example)
+grafana:
+  adminUser: admin
+  adminPassword: prom-operator
+  enabled: true
+prometheus:
+  prometheusSpec:
+    retention: 10d
+    routePrefix: /
+kubeStateMetrics:
+  enabled: true
+nodeExporter:
+  enabled: true
+alertmanager:
+  enabled: true
